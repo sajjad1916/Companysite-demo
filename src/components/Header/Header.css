@@ -19,11 +19,11 @@
     text-transform: uppercase;
   }
   
-  #header .logo a {
+  #header .logo .link {
     color: #111;
   }
   
-  #header .logo a span {
+  #header .logo .link span {
     color: #1bbd36;
   }
   
@@ -39,7 +39,7 @@
     border-left: 1px solid #c4c4c4;
   }
   
-  .header-social-links a {
+  .header-social-links .link {
     color: #a0a0a0;
     display: inline-block;
     line-height: 0px;
@@ -47,11 +47,11 @@
     padding-left: 20px;
   }
   
-  .header-social-links a i {
+  .header-social-links .link i {
     line-height: 0;
   }
   
-  .header-social-links a:hover {
+  .header-social-links .link:hover {
     color: #1bbd36;
   }
   
@@ -84,8 +84,8 @@
     position: relative;
   }
   
-  .navbar a,
-  .navbar a:focus {
+  .navbar .link,
+  .navbar .link:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,17 +99,17 @@
     transition: 0.3s;
   }
   
-  .navbar a i,
-  .navbar a:focus i {
+  .navbar .link i,
+  .navbar .link:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
   }
   
-  .navbar a:hover,
+  .navbar .link:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar li:hover>.link {
     color: #1bbd36;
   }
   
@@ -133,7 +133,7 @@
     min-width: 200px;
   }
   
-  .navbar .dropdown ul a {
+  .navbar .dropdown ul .link {
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 500;
@@ -141,13 +141,13 @@
     color: #111;
   }
   
-  .navbar .dropdown ul a i {
+  .navbar .dropdown ul .link i {
     font-size: 12px;
   }
   
-  .navbar .dropdown ul a:hover,
+  .navbar .dropdown ul .link:hover,
   .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .navbar .dropdown ul li:hover>.link {
     color: #1bbd36;
   }
   
@@ -237,16 +237,16 @@
     transition: 0.3s;
   }
   
-  .navbar-mobile a,
-  .navbar-mobile a:focus {
+  .navbar-mobile .link,
+  .navbar-mobile .link:focus {
     padding: 10px 20px;
     font-size: 15px;
     color: #111;
   }
   
-  .navbar-mobile a:hover,
+  .navbar-mobile .link:hover,
   .navbar-mobile .active,
-  .navbar-mobile li:hover>a {
+  .navbar-mobile li:hover>.link {
     color: #1bbd36;
   }
   
@@ -271,17 +271,17 @@
     min-width: 200px;
   }
   
-  .navbar-mobile .dropdown ul a {
+  .navbar-mobile .dropdown ul .link {
     padding: 10px 20px;
   }
   
-  .navbar-mobile .dropdown ul a i {
+  .navbar-mobile .dropdown ul .link i {
     font-size: 12px;
   }
   
-  .navbar-mobile .dropdown ul a:hover,
+  .navbar-mobile .dropdown ul .link:hover,
   .navbar-mobile .dropdown ul .active:hover,
-  .navbar-mobile .dropdown ul li:hover>a {
+  .navbar-mobile .dropdown ul li:hover>.link {
     color: #1bbd36;
   }
   

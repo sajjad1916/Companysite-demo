@@ -1,49 +1,50 @@
 import React from 'react';
-import "./Header.css"
+import "./Header.css";
+import {Link} from 'react-router-dom'
 
 function Header() {
   return (
     <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html"><span>Com</span>pany</a></h1>
+      <h1 class="logo me-auto"><Link to='/'><span>Com</span>pany</Link></h1>
       
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><Link to='/' class="active link">Home</Link></li>
 
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><Link to="/about" className = "link"><span>About</span> <i class="bi bi-chevron-down"></i></Link>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <li><a href="about.html" className = "link">About Us</a></li>
+              <li><a href="team.html" className = "link">Team</a></li>
+              <li><a href="testimonials.html" className = "link">Testimonials</a></li>
+              <li class="dropdown"><a href="#" className = "link"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="#" className = "link">Deep Drop Down 1</a></li>
+                  <li><a href="#" className = "link">Deep Drop Down 2</a></li>
+                  <li><a href="#" className = "link">Deep Drop Down 3</a></li>
+                  <li><a href="#" className = "link">Deep Drop Down 4</a></li>
+                  <li><a href="#" className = "link">Deep Drop Down 5</a></li>
                 </ul>
               </li>
             </ul>
           </li>
 
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html" className = "link">Services</a></li>
+          <li><a href="portfolio.html" className = "link">Portfolio</a></li>
+          <li><a href="pricing.html" className = "link">Pricing</a></li>
+          <li><a href="blog.html" className = "link">Blog</a></li>
+          <li><a href="contact.html" className = "link">Contact</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
       <div class="header-social-links d-flex">
-        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></a>
+        <a href="#" class="twitter" className = "link"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook" className = "link"><i class="bu bi-facebook"></i></a>
+        <a href="#" class="instagram" className = "link"><i class="bu bi-instagram"></i></a>
+        <a href="#" class="linkedin " className = "link"><i class="bu bi-linkedin"></i></a>
       </div>
 
     </div>
